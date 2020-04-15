@@ -30,11 +30,13 @@ try:
 except ImportError:
     raise ImportError(
         "Error: elasticsearch (https://pypi.python.org/pypi/elasticsearch) "
-        "version 2.x or 5.x is not installed.\n"
+        "version 2.x or 5.x or 7.x is not installed.\n"
         "Install with:\n"
         "  pip install elastic2-doc-manager[elastic2]\n"
         "or:\n"
         "  pip install elastic2-doc-manager[elastic5]\n"
+        "or:\n"
+        "  pip install elastic2-doc-manager[elastic7]\n"
     )
 
 from elasticsearch import (
